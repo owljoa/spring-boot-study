@@ -22,7 +22,7 @@ public class Member {
   private Long memberId;
 
 //  @ManyToOne(fetch = FetchType.EAGER)
-  @ManyToOne(fetch = FetchType.LAZY)
+  @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "team_id")
   private Team team;
 }

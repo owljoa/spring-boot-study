@@ -22,6 +22,9 @@ public class Team {
   @Column(name = "team_id")
   private Long teamId;
 
+  @Column(name = "name")
+  private String name;
+
   @OneToMany(fetch = FetchType.LAZY, mappedBy = "team")
   private Set<Member> memberSet = new HashSet<>();
 }
